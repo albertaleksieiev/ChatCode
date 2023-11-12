@@ -4,13 +4,13 @@
 This CLI application is created to make coding tasks easier and more interactive. It's a straightforward tool that helps in two major ways:
 
 
-1. **Chatting with Code Feature**: The standout feature of this application is its ability to let you chat with your code. You can simply tell the assistant what changes you want in your code, and it will apply these changes for you. It's like having a conversation with your codebase, making coding more accessible and maybe even a bit more fun.
+1. **Chatting with Code Feature**: Chat with your code. You can simply tell the assistant what changes you want in your code, and it will apply these changes for you. It's like having a conversation with your codebase, making coding more accessible and maybe even a bit more fun.
 2. **Syncing Local Project Files**: The application can synchronize your local project files with the assistant. This means your working files are always up-to-date and aligned with what the assistant understands and works with.
 
 The goal of this application is to provide a user-friendly way to manage and modify your code without getting too deep into technicalities. It's about simplifying your coding workflow by just chatting with your code.
 
 ## Overview
-
+![preview](./resources/app.png)
 
 ## Commands
 
@@ -50,7 +50,8 @@ OPENAI_API_KEY=[Your OpenAI API Key]
 APP_PATH="./app" # Your app to sync
 ASSISTANT_NAME=ChatCodeAssistant
 ```
-Replace `[Your OpenAI API Key]` with your actual OpenAI API key.
+
+Replace `[Your OpenAI API Key]` with your actual OpenAI API key. We use [openai assistants](https://platform.openai.com/docs/assistants/how-it-works).
 
 ### Example
 
@@ -205,8 +206,7 @@ Code updated
 ## Current Support and Evaluation Process
 
 ### JavaScript Support
-Right now, our CLI application only works with JavaScript (JS). We've focused on making it really good for JS users first. We might add other languages later, but for now, it's all about getting it right with JavaScript.
-
+Right now, our CLI application only works with JavaScript (.js) files.
 ### How We Use Puppeteer for Code Evaluation
 We use a tool called Puppeteer to check if the changes you make to your code are working fine. Here's what happens:
 
