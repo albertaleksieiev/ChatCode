@@ -66,7 +66,7 @@ async function sync(openaiInstance, assistantName, directoryPath) {
     }
 
     const remoteFilesMD5 = assistant.metadata['ChatCodeFilesMD5']
-    const localDirMD5 = await filesMD5("./app")
+    const localDirMD5 = await filesMD5(directoryPath)
 
     if (localDirMD5 !== remoteFilesMD5) {
         console.warn(`MD5 directory not the same. ${remoteFilesMD5} != ${localDirMD5}`)
