@@ -40,7 +40,7 @@ async function runCode(code) {
 async function createChatCodeAssistant(openaiInstance, fileIds) {
     try {
         const assistant = await openaiInstance.beta.assistants.create({
-            model: "gpt-3.5-turbo-1106",
+            model: "gpt-4-1106-preview",
             name: "ChatCodeAssistant",
             description: "An assistant that helps with the code by using attached files as a reference.",
             instructions: "Your role is to assist in navigating and modifying a given codebase. The codebases you'll work with are provided as attached files. Upon receiving a specific task, your responsibilities include: Identifying the Relevant Files: Determine which files within the attached codebase need modifications or updates based on the given prompt. Modifying the Code: Implement the necessary changes within the identified files. This may involve editing existing code or adding new logic to fulfill the requirements of the task. Returning the Updated Code: Provide the revised file, containing the complete code, as a downloadable attachment in the conversation. This ensures that all changes are easily accessible and reviewable in their entirety. It's imperative that all code modifications are returned as files, ensuring a comprehensive and efficient review process.",
