@@ -2,8 +2,8 @@ require('dotenv').config();
 const OpenAI = require("openai")
 const yargs = require("yargs");
 const {hideBin} = require('yargs/helpers');
-const {sync, getAssistantIfExists, checkAndCreateAssistant, createThreadAndSendMessage} = require("./code");
-const {askCli, logSuccess, logAction, logWarning, logError, logInfo} = require('./utils')
+const {sync, getAssistantIfExists, checkAndCreateAssistant, createThreadAndSendMessage} = require("./src/code");
+const {askCli, logSuccess, logAction, logWarning, logError, logInfo} = require('./src/utils')
 const fs = require("fs");
 const path = require("path");
 const appDirectoryPath = process.env.APP_PATH;

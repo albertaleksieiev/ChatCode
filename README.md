@@ -202,6 +202,24 @@ Code updated
 · · 4. CC) Chat with code
 ```
 
+## Current Support and Evaluation Process
+
+### JavaScript Support
+Right now, our CLI application only works with JavaScript (JS). We've focused on making it really good for JS users first. We might add other languages later, but for now, it's all about getting it right with JavaScript.
+
+### How We Use Puppeteer for Code Evaluation
+We use a tool called Puppeteer to check if the changes you make to your code are working fine. Here's what happens:
+
+- **Automatic Checking**: Every time you change your code using the chat feature, Puppeteer runs it to see if it works.
+
+- **Finding and Reporting Errors**: If there's a problem, Puppeteer lets us know what went wrong.
+
+- **Fixing Errors with ChatGPT's Help**: You can then ask ChatGPT about the error. It'll give you advice on how to fix it.
+
+- **Keep Trying Until It Works**: You can use ChatGPT's suggestions to fix your code. We'll keep checking it with Puppeteer until there are no more errors.
+
+This process is straightforward. It helps you fix your JS code and learn more about coding along the way.
+
 ## License
 MIT
 
